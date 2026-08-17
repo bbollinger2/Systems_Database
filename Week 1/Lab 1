@@ -1,2 +1,1 @@
-select current_timestamp;
-select current_database()
+select current_timestamp, current_database()
