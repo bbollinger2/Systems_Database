@@ -1,0 +1,26 @@
+Commands
+
+CREATE DATABASE your_database; >Creates a database within SQL 
+
+CREATE TABLE your_table (data columns); >Creates a table within the current database 
+
+INSERT INTO your_database(data types) >Inserts 
+
+VALUES (numberdata,'your_data'), ('more_data');  
+
+ 
+
+Data Types 
+
+varchar(amount) >Characters and how many allowed  
+
+date >Must input a date in the format year-month-day 
+
+numeric >Must input a number 
+
+
+
+Syntax
+
+SQL must end with a semicolon (;)
+
