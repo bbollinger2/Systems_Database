@@ -1,0 +1,15 @@
+#SQL code to get the date, current database you're in, the version, and displays "Hello, SQL!" within the query results
+
+select current_timestamp, current_database(), version(), 'Hello, SQL!' as message;
+
+
+
+#Notes from Chapter two
+
++ How to create a database: Use the command "create database 'your database';".
+
++ How to create a table: Use the command "create table 'your table'('data types');".
+
++ Why are semicolons important in SQL: Semicolons are how you end an SQL query.
+
++ Two exambles of data types you might use in a table: Some exambles would be name, age, date, or their employee ID.
