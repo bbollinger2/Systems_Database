@@ -1,26 +1,70 @@
 Commands
 
-CREATE DATABASE your_database; >Creates a database within SQL 
+DATABASE > CREATE DATABASE your_database; > Creates a database within SQL 
 
-CREATE TABLE your_table (data columns); >Creates a table within the current database 
+TABLE > CREATE TABLE your_table (data columns); > Creates a table within the current database 
 
-INSERT INTO your_database(data types) >Inserts 
+INSERT > INSERT INTO your_database(data types) > Inserts data into a table 
 
-VALUES (numberdata,'your_data'), ('more_data');  
+VALUES > VALUES (numberdata,'your_data'), ('more_data'); > This is how you select what data is added to your table
 
- 
+SELECT > SELECT 'desired_data' FROM 'your_table'; > Used to view data within a table
+
+ORDER BY > ORDER BY 'data_type'; > This displays your data within the table in order by ascending 
+
+DISTICT > SELECT DISTINCT 'data_type' FROM 'your_table'; > Searches for unique data within your table 
+
+WHERE > SELECT 'data' FROM 'table' WHERE 'data_type' = 'your_data' > Gathers data from a specific data type
+
+BETWEEN > SELECT 'data_type FROM 'your_table' WHERE 'data_type' BETWEEN 'value' AND 'value' > Gathers all data within a range
+
+AND > SELECT 'data_type FROM 'your_table' WHERE 'data_type' BETWEEN 'value' AND 'value' > To select multiple types of data
+
+LIKE > SELECT 'data_type FROM 'your_table' WHERE 'data_type' LIKE 'value%' > Find data similar to what is inputed
+
+OR > SELECT 'data_type FROM 'your_table' WHERE 'data_type' = 'value' OR 'data_type' = 'value'
+
+
 
 Data Types 
 
-varchar(amount) >Characters and how many allowed  
+varchar(amount) > Characters and how many allowed  
 
-date >Must input a date in the format year-month-day 
+date > Must input a date in the format year-month-day 
 
-numeric >Must input a number 
+numeric > Must input a number 
+
+BIGSERIAL > Gives an id number to each data input automaticaly 
 
 
 
 Syntax
 
-SQL must end with a semicolon (;)
+; > SQL must end with a semicolon (;)
+
+* > This is used to select all items within the code
+
+DESC > This is how you change the order that "ORDER BY" gives you from ascending to descending
+
+= > Equal to
+
+<> > Not equal 
+
+> > Greater than 
+
+< > Less than 
+
+>= > Greater than equal to
+
+<= > Less than equal to
+
+IN: > match one of several values
+
+'YYYY-MM-DD' > Is how you input a date
+
+% > Wild card so and number of characters can appear 
+
+_ > used to match one unknown character 
+
+() > Used to combine multiple data types or commands together
 
