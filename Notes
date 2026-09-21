@@ -24,6 +24,16 @@ LIKE > SELECT 'data_type FROM 'your_table' WHERE 'data_type' LIKE 'value%' > Fin
 
 OR > SELECT 'data_type FROM 'your_table' WHERE 'data_type' = 'value' OR 'data_type' = 'value'
 
+LIMIT > SELECT * FROM your_table LIMIT number_of_rows; > limits the number of rows shown 
+
+SUM > SELECT SUM (value * value) AS temp_column FROM your_table > 
+
+AVG > SELECT AVG(value) AS temp_column FROM your_table >
+
+MIN/MAX > SELECT MIN(value), MAX(value) FROM your_table > 
+
+COUNT > SELECT COUNT(*) FROM your_table > 
+
 
 
 Data Types 
@@ -85,4 +95,23 @@ IN: > match one of several values
 _ > used to match one unknown character 
 
 () > Used to combine multiple data types or commands together
+
+
+
+EXTRA
+
+-- two ways to import csv files
+
+-- 1st Option is with SQL
+
+-- COPY products_raw FROM '"C:\Users\399632\Downloads\products_raw.csv"' DELIMITER ',' CSV HEADER;
+
+-- COPY products_raw FROM '"C:\Users\399632\Downloads\products_raw.csv"' WITH (format CSV , HEADER);
+
+-- 2nd Option is to use the GUI 
+
+-- Go to your table with matching columns and select import/export then input the relevant data 
+
+-- Confirm file name, delimiter, header is on
+
 
