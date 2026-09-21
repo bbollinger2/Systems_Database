@@ -32,9 +32,27 @@ varchar(amount) > Characters and how many allowed
 
 date > Must input a date in the format year-month-day 
 
-numeric > Must input a number 
+numeric > Exact decimal numbers
 
 BIGSERIAL > Gives an id number to each data input automaticaly 
+
+char > Fixed-length text only letters not numbers
+
+text > Text of variable length
+
+real > Approximate decimal numbers
+
+double precision > 	More precise approximate decimal numbers
+
+timestamp > Date + time, without timezone
+
+timestamp with time zone > Date + time, with timezone handling
+
+time > Time of day
+
+interval > A length/duration of time
+
+boolean > True/false
 
 
 
